@@ -1,0 +1,49 @@
+.env# Python related
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[co]
+
+.env
+
+db.sqlite3
+*.log
+
+# Docker files (do not ignore these if using Docker)
+# docker-compose.override.yml (Optional, if you have specific override files for local development)
+# docker-compose.yml (keep this for deployment)
+# Dockerfile (keep this for building images)
+
+# Virtual Environment
+venv/
+.env/
+
+# IDE files
+.vscode/
+.idea/
+
+# Miscellaneous
+*.DS_Store
+*.coverage
+*.tox/
+*.nox/
+*.hypothesis/
+.coverage
+nosetests.xml
+coverage.xml
+*.coverage
+*.log
+*.csv
+*.dat
+*.dat~
+*.tmp
+*.bak
+
+*.swp
+*.swo
+
+*.pem
+*.key
+
+*.git

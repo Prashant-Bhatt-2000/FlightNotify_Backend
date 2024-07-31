@@ -4,7 +4,7 @@ from django.conf import settings
 
 def sendemail(email, token): 
     subject = "Your account verification email"
-    message = f'Please click on this link for account verification: http://127.0.0.1:8000/api/accounts/verifytoken/{token}'
+    message = f'Please click on this link for account verification: https://flightnotify-backend.onrender.com/api/accounts/verifytoken/{token}'
     email_from = settings.EMAIL_HOST_USER
 
     html_message = f"""

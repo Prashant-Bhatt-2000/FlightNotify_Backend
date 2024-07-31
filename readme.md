@@ -14,9 +14,6 @@
 
     2. Download requirement.txt: 
 
-    3. Run react command: npm install
-
-
 ---
 
 

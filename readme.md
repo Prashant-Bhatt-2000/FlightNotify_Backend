@@ -10,7 +10,7 @@
 
 ### Project Setup 
 
-    1. Git Clone : git clone https://github.com/Prashant-Bhatt-2000/FlightNotify.git
+    1. Git Clone : git clone https://github.com/Prashant-Bhatt-2000/FlightNotify_Backend.git
 
     2. Download requirement.txt: 
 
@@ -18,30 +18,6 @@
 
 
 ---
-
-### Requirement 
-
-#### Before starting Please setup your Email
-
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_HOST = 'smtp.gmail.com'
-    EMAIL_PORT = 587
-    EMAIL_USE_TLS = True
-    EMAIL_HOST_USER = 'Put your own email'
-    EMAIL_HOST_PASSWORD = 'Put your own app generated password of google'
-
-#### PostGres Setup according to this Configuration:
-
-    DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'FlightNotify',
-        'USER': 'postgres',  
-        'PASSWORD': 'postgres',  
-        'HOST': 'localhost',
-        'PORT': '5432', 
-    }
-}
 
 
 ### API's

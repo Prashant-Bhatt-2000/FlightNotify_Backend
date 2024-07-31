@@ -89,29 +89,33 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-import os 
-from dotenv import load_dotenv
-
-load_dotenv()
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('POSTGRES_DB_NAME'),
-        'USER': os.environ.get('POSTGRES_USERNAME'),  
-        'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),  
-        'HOST': os.environ.get('HOST'),
-        'PORT': os.environ.get('PORT'), 
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
+
+import os 
+from dotenv import load_dotenv
+import dj_database_url
+
+
+load_dotenv()
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.environ.get('POSTGRES_DB_NAME'),
+#         'USER': os.environ.get('POSTGRES_USERNAME'),  
+#         'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),  
+#         'HOST': os.environ.get('HOST'),
+#         'PORT': os.environ.get('PORT'), 
+#     }
+# }
+
+DATABASES['default'] = dj_database_url.parse(os.environ.get('POSTGRES_DB_STRING'))
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -133,14 +137,14 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',  # Update with your frontend URL
+    'http://localhost:5173',  
 ]
 
 # CORS_ALLOW_ALL_ORIGINS = True
 
 
 # settings.py
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0']
 
 
 
@@ -183,4 +187,4 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
 ADMIN_LOGIN_URL = os.environ.get('ADMIN_LOGIN_URL')
 
-CUSTOMER_LOGIN_URL = os.env.get('CUSTOMER_LOGIN_URL')
+CUSTOMER_LOGIN_URL = os.environ.get('CUSTOMER_LOGIN_URL')

@@ -23,7 +23,7 @@
 
     Admin Signup : 
 
-        API : http://localhost:8000/api/accounts/adminsignup
+        API : https://flightnotify-backend.onrender.com/api/accounts/adminsignup
 
             data :{ 
                 "username": "Prashant", 
@@ -35,7 +35,7 @@
 
     Admin Signin : 
 
-        API : http://localhost:8000/api/accounts/adminsignin
+        API : https://flightnotify-backend.onrender.com/api/accounts/adminsignin
 
             data :{ 
                 "email": "bhatt.prashant2018@gmail.com", 
@@ -45,7 +45,7 @@
     
     Customer Signup : 
 
-        API : http://localhost:8000/api/accounts/customersignup
+        API : https://flightnotify-backend.onrender.com/api/accounts/customersignup
 
             data :{ 
                 "username": "Prashant", 
@@ -57,7 +57,7 @@
     
     Customer Signin : 
 
-        API : http://localhost:8000/api/accounts/customersignin
+        API : https://flightnotify-backend.onrender.com/api/accounts/customersignin
 
             data :{ 
                 "email": "bhatt.prashant2018@gmail.com", 
@@ -69,7 +69,7 @@
  <!-- Bearer <TOKEN> -->
     Customer SIgnout: 
 
-        API: http://localhost:8000/api/accounts/customersignout
+        API: https://flightnotify-backend.onrender.com/api/accounts/customersignout
 ---
 
 
@@ -83,7 +83,7 @@
 
     Create Flight : 
              
-        API : http://localhost:8000/api/flight/createflight
+        API : https://flightnotify-backend.onrender.com/api/flight/createflight
 
         Data : { 
             origin: newFlight.origin,
@@ -96,7 +96,7 @@
 
     UpdateFlight: 
 
-    API : http://localhost:8000/api/flight/updateflight/<str:flight_id>
+    API : https://flightnotify-backend.onrender.com/api/flight/updateflight/<str:flight_id>
 
     Data : { 
             origin: origin,
@@ -113,7 +113,7 @@
     Customer: 
 
     Bookflight : 
-    API : http://localhost:8000/api/flight/bookflight
+    API : https://flightnotify-backend.onrender.com/api/flight/bookflight
 
     Data : { 
         flight_number: flight_number,
@@ -127,12 +127,12 @@
 
     Get Flights : 
 
-    API : http://localhost:8000/api/flight/getflights
+    API : https://flightnotify-backend.onrender.com/api/flight/getflights
 
 
 
     MyBookings : 
 
-    API : http://localhost:8000/api/flight/mybookings
+    API : https://flightnotify-backend.onrender.com/api/flight/mybookings
 
 ----

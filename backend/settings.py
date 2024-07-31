@@ -115,7 +115,8 @@ load_dotenv()
 #     }
 # }
 
-DATABASES['default'] = dj_database_url.parse(os.environ.get('POSTGRES_DB_STRING'))
+DATABASES['default'] = dj_database_url.parse(os.environ.get('POSTGRES_DB_STRING'), conn_max_age=600)
+
 
 # print(DATABASES)
 
@@ -146,7 +147,7 @@ CORS_ALLOWED_ORIGINS = [
 
 
 # settings.py
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', 'flightnotify-backend.onrender.com']
 
 
 

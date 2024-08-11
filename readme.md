@@ -5,6 +5,11 @@
     1. Backend: Django 
     3. Data Base : Postgres (hosted)
 
+### Note : These Apis Are deployed and Postgres Data Base is also Deployed.
+
+### NOTE : ( If DB not working then Please refer Git repo metioned Below as may be the free postgres version might get expired)
+
+### Git repository : https://github.com/Prashant-Bhatt-2000/FlightNotify
 
 ### Authentication : Multi user (Admin , Customer)
 
